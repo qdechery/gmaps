@@ -19,6 +19,9 @@
       "./node_modules/@types"
     ]
   },
+  "files":[
+    "app/app.module.ts"
+  ],
   "include": [
     "node_modules/@ngui/utils/src/**/*.ts",
     "src/**/*.ts",
