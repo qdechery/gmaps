@@ -41,7 +41,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var AppComponent = /** @class */ (function () {
     function AppComponent(router) {
-        this.center = 'Brampton, Canada';
+        this.center = 'Seattle, Washington';
         this.positions = [];
         router.events.subscribe(function (event) {
             // TODO: bad idea to deal with document directly
@@ -346,7 +346,7 @@ var BicyclingLayerComponent = /** @class */ (function () {
     }
     BicyclingLayerComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            template: "\n    <h1>Bicycling Layer</h1>\n    <ngui-map zoom=\"14\" center=\"42.3726399, -71.1096528\">\n      <bicycling-layer></bicycling-layer>\n    </ngui-map>\n    <button (click)=\"sc.plnkr(code)\">See in plunker</button>\n    <pre class=\"prettyprint\">{{code}}</pre>"
+            template: "\n    <h1>Bicycling Layer</h1>\n    <ngui-map zoom=\"14\" center=\"47.6062, 122.3321\">\n      <bicycling-layer></bicycling-layer>\n    </ngui-map>\n    <button (click)=\"sc.plnkr(code)\">See in plunker</button>\n    <pre class=\"prettyprint\">{{code}}</pre>"
         }),
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_source_code_service__WEBPACK_IMPORTED_MODULE_2__["SourceCodeService"]])
     ], BicyclingLayerComponent);
@@ -1329,7 +1329,7 @@ var SimpleMapComponent = /** @class */ (function () {
     };
     SimpleMapComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            template: "\n    <h1>Simple Map</h1>\n    <ngui-map center=\"Brampton, Canada\"\n      (mapClick)=\"onClick($event)\"\n      [fullscreenControl]=\"true\"\n      [fullscreenControlOptions]=\"{position: 'TOP_RIGHT'}\"></ngui-map>\n    \"center\" can be an;\n    <ul>\n      <li>lat/lng array e.g., [42.99, -77.79]\n      <li> an address. e.g. Brampton, Canada\n      <li> or, none(for the current position)\n    </ul>\n    <ngui-map center=\"some-invalid-location\"\n      [geoFallbackCenter]=\"[42.99, -77.79]\"></ngui-map>\n\n    <button (click)=\"sc.plnkr(code)\">See in plunker</button>\n\n    <pre class=\"prettyprint\">{{code}}</pre>"
+            template: "\n    <h1>Simple Map</h1>\n    <ngui-map center=\"\"\n      (mapClick)=\"onClick($event)\"\n      [fullscreenControl]=\"true\"\n      [fullscreenControlOptions]=\"{position: 'TOP_RIGHT'}\"></ngui-map>\n    \"center\" can be an;\n    <ul>\n      <li>lat/lng array e.g., [47.608013, -122.335167]\n      <li> an address. e.g. Seattle, Washington, USA\n      <li> or, none(for the current position)\n    </ul>\n    <ngui-map center=\"some-invalid-location\"\n      [geoFallbackCenter]=\"[47.608013, -122.335167]\"></ngui-map>\n\n    <button (click)=\"sc.plnkr(code)\">See in plunker</button>\n\n    <pre class=\"prettyprint\">{{code}}</pre>"
         }),
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_source_code_service__WEBPACK_IMPORTED_MODULE_2__["SourceCodeService"]])
     ], SimpleMapComponent);
@@ -1370,7 +1370,7 @@ var SimpleMarkerComponent = /** @class */ (function () {
     };
     SimpleMarkerComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            template: "\n    <h1>Simple Marker</h1>\n    <ngui-map center=\"Brampton, Canada\"\n      [zoomControlOptions]=\"{position: 'TOP_CENTER'}\"\n      [fullscreenControl]=\"true\"\n      [fullscreenControlOptions]=\"{position: 'TOP_CENTER'}\"\n      (click)=\"log($event)\"\n      [scrollwheel]=\"false\">\n      <marker position=\"will-fall-back-to-brampton-canada\"\n        [geoFallbackPosition]=\"[43.73154789999999, -79.7449296972229]\"\n        (dragstart)=\"log($event, 'dragstart')\"\n        (dragend)=\"log($event, 'dragend')\"\n        draggable=\"true\"></marker>\n    </ngui-map>\n\n    <button (click)=\"sc.plnkr(code)\">See in plunker</button>\n\n    <pre class=\"prettyprint\">{{code}}</pre>"
+            template: "\n    <h1>Simple Marker</h1>\n    <ngui-map center=\"[47.608013, -122.335167]\"\n      [zoomControlOptions]=\"{position: 'TOP_CENTER'}\"\n      [fullscreenControl]=\"true\"\n      [fullscreenControlOptions]=\"{position: 'TOP_CENTER'}\"\n      (click)=\"log($event)\"\n      [scrollwheel]=\"false\">\n      <marker position=\"will-fall-back-to-seattle-washington\"\n        [geoFallbackPosition]=\"[47.608013, -122.335167]\"\n        (dragstart)=\"log($event, 'dragstart')\"\n        (dragend)=\"log($event, 'dragend')\"\n        draggable=\"true\"></marker>\n    </ngui-map>\n\n    <button (click)=\"sc.plnkr(code)\">See in plunker</button>\n\n    <pre class=\"prettyprint\">{{code}}</pre>"
         }),
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_source_code_service__WEBPACK_IMPORTED_MODULE_2__["SourceCodeService"]])
     ], SimpleMarkerComponent);
