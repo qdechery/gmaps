@@ -8,7 +8,7 @@ import { Router, NavigationEnd } from '@angular/router';
   templateUrl: './app.html',
 })
 export class AppComponent {
-  public center = 'Brampton, Canada';
+  public center = 'Seattle, Washington';
   public positions = [ ];
   constructor(router: Router) {
     router.events.subscribe( event => {

@@ -4,14 +4,14 @@ import { SourceCodeService } from '../source-code.service';
 @Component({
   template: `
     <h1>Simple Marker</h1>
-    <ngui-map center="Brampton, Canada"
+    <ngui-map center="[47.608013, -122.335167]"
       [zoomControlOptions]="{position: 'TOP_CENTER'}"
       [fullscreenControl]="true"
       [fullscreenControlOptions]="{position: 'TOP_CENTER'}"
       (click)="log($event)"
       [scrollwheel]="false">
-      <marker position="will-fall-back-to-brampton-canada"
-        [geoFallbackPosition]="[43.73154789999999, -79.7449296972229]"
+      <marker position="will-fall-back-to-seattle-washington"
+        [geoFallbackPosition]="[47.608013, -122.335167]"
         (dragstart)="log($event, 'dragstart')"
         (dragend)="log($event, 'dragend')"
         draggable="true"></marker>

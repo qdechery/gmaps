@@ -4,7 +4,7 @@ import { SourceCodeService } from '../source-code.service';
 @Component({
   template: `
     <h1>Bicycling Layer</h1>
-    <ngui-map zoom="14" center="42.3726399, -71.1096528">
+    <ngui-map zoom="14" center="47.6062, 122.3321">
       <bicycling-layer></bicycling-layer>
     </ngui-map>
     <button (click)="sc.plnkr(code)">See in plunker</button>
